@@ -1,0 +1,24 @@
+{
+  "name": "Hemafy Blood Health Manager",
+  "short_name": "Hemafy",
+  "description": "Your Smart Partner for Blood Health. Monitor Hemoglobin, Ferritin, and Medication Adherence.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#7A1028",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
