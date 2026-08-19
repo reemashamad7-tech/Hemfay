@@ -110,7 +110,7 @@ export const AiScreen: React.FC = () => {
                 {/* AI Avatar */}
                 {isAI && (
                   <div className="w-8 h-8 rounded-full bg-burgundy-light flex items-center justify-center shrink-0 border border-burgundy-soft/10">
-                    <HemfayLogo iconOnly size="custom" customSize={20} />
+                    <HemafyLogo iconOnly size="custom" customSize={20} />
                   </div>
                 )}
 
