@@ -4,17 +4,17 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { useStore } from '../store/useStore';
-import { HemafyLogo } from '../components/HemafyLogo';
+import { HemfayLogo } from '../components/HemafyLogo';
 import { Mail, Lock, User, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Zod schemas
-const loginSchema = z.object({
+const loginSchem = z.object({
   email: z.string().email('Please enter a valid email address'),
   password: z.string().min(6, 'Password must be at least 6 characters')
 });
 
-const signupSchema = z.object({
+const signupSchem = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
   email: z.string().email('Please enter a valid email address'),
   password: z.string().min(6, 'Password must be at least 6 characters'),
@@ -24,8 +24,8 @@ const signupSchema = z.object({
   path: ["confirmPassword"]
 });
 
-type LoginFormValues = z.infer<typeof loginSchema>;
-type SignupFormValues = z.infer<typeof signupSchema>;
+type LoginFormValues = z.infer<typeof loginSchem>;
+type SignupFormValues = z.infer<typeof signupSchem>;
 
 export const AuthScreen: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'login' | 'signup'>('login');
@@ -38,7 +38,7 @@ export const AuthScreen: React.FC = () => {
     handleSubmit: handleLoginSubmit,
     formState: { errors: loginErrors }
   } = useForm<LoginFormValues>({
-    resolver: zodResolver(loginSchema)
+    resolver: zodResolver(loginSchem)
   });
 
   const {
@@ -46,7 +46,7 @@ export const AuthScreen: React.FC = () => {
     handleSubmit: handleSignupSubmit,
     formState: { errors: signupErrors }
   } = useForm<SignupFormValues>({
-    resolver: zodResolver(signupSchema)
+    resolver: zodResolver(signupSchem)
   });
 
   const onLogin = async (data: LoginFormValues) => {
@@ -287,7 +287,7 @@ export const AuthScreen: React.FC = () => {
       </div>
 
       <div className="mt-6 text-center text-[10px] text-text-muted select-none">
-        <p>Hemafy Blood Health Manager</p>
+        <p>Hemfay Blood Health Manager</p>
       </div>
     </div>
   );
