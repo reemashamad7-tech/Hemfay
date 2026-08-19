@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { useStore } from '../store/useStore';
-import { HemfayLogo } from '../components/HemafyLogo';
+import { HemafyLogo } from '../components/HemafyLogo';
 import { Mail, Lock, User, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
