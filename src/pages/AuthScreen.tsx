@@ -287,7 +287,7 @@ export const AuthScreen: React.FC = () => {
       </div>
 
       <div className="mt-6 text-center text-[10px] text-text-muted select-none">
-        <p>Hemfay Blood Health Manager</p>
+        <p>Hemafy Blood Health Manager</p>
       </div>
     </div>
   );
