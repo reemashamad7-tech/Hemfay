@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useStore } from '../store/useStore';
 import { aiService, AiResponse } from '../services/ai/aiService';
 import { SourceChunk } from '../services/ai/retrievalService';
-import { HemafyLogo } from '../components/HemafyLogo';
+import { HemfayLogo } from '../components/HemafyLogo';
 import { 
   Send, 
   BookOpen, 
@@ -110,7 +110,7 @@ export const AiScreen: React.FC = () => {
                 {/* AI Avatar */}
                 {isAI && (
                   <div className="w-8 h-8 rounded-full bg-burgundy-light flex items-center justify-center shrink-0 border border-burgundy-soft/10">
-                    <HemafyLogo iconOnly size="custom" customSize={20} />
+                    <HemfayLogo iconOnly size="custom" customSize={20} />
                   </div>
                 )}
 
