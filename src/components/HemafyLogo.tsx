@@ -9,7 +9,7 @@ interface LogoProps {
   customSize?: number;
 }
 
-export const HemfayLogo: React.FC<LogoProps> = ({
+export const HemafyLogo: React.FC<LogoProps> = ({
   iconOnly = false,
   size = 'md',
   className = '',
@@ -54,8 +54,8 @@ export const HemfayLogo: React.FC<LogoProps> = ({
   return (
     <div className={`flex items-center select-none shrink-0 ${textClassName} ${className}`}>
       <img
-        src="/hemfay-logo.png"
-        alt="Hemfay Logo"
+        src="/hemafy-logo.png"
+        alt="Hemafy Logo"
         className="object-contain"
         style={{
           width: currentSize.fullWidth,
@@ -66,5 +66,5 @@ export const HemfayLogo: React.FC<LogoProps> = ({
   );
 };
 
-export default HemfayLogo;
+export default HemafyLogo;
 
