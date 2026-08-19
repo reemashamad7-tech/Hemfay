@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useStore } from '../store/useStore';
 import { aiService, AiResponse } from '../services/ai/aiService';
 import { SourceChunk } from '../services/ai/retrievalService';
-import { HemfayLogo } from '../components/HemafyLogo';
+import { HemafyLogo } from '../components/HemafyLogo';
 import { 
   Send, 
   BookOpen, 
