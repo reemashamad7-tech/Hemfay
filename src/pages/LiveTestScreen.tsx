@@ -17,7 +17,7 @@ export const LiveTestScreen: React.FC = () => {
 
   const handleStartAnalysis = async () => {
     if (!isConnected) {
-      addToast(language === 'ar' ? 'يرجى توصيل جهاز المحلل أولاً.' : 'Please connect your Hemafy Analyzer device first.', 'warning');
+      addToast(language === 'ar' ? 'يرجى توصيل جهاز المحلل أولاً.' : 'Please connect your Hemfay Analyzer device first.', 'warning');
       navigate('/connect');
       return;
     }
