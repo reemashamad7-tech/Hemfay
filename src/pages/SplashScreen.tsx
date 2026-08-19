@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useStore } from '../store/useStore';
-import { HemfayLogo } from '../components/HemafyLogo';
+import { HemafyLogo } from '../components/HemafyLogo';
 import { motion } from 'framer-motion';
 
 export const SplashScreen: React.FC = () => {
@@ -36,7 +36,7 @@ export const SplashScreen: React.FC = () => {
           animate={{ transform: 'rotate(0deg) scale(1)' }}
           transition={{ duration: 1.5, ease: 'easeOut' }}
         >
-          <HemfayLogo size="xl" iconOnly className="mx-auto" />
+          <HemafyLogo size="xl" iconOnly className="mx-auto" />
         </motion.div>
 
         <div className="space-y-3">
